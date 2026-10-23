@@ -2,47 +2,55 @@
 import React, { useState } from "react";
 import "./Slider.css";
 
+// Import images from assets
+import watch01 from "../../assets/watch-01.jxl";
+import watch02 from "../../assets/watch-02.jxl";
+import perfume01 from "../../assets/perfume-01.webp";
+import shoes01 from "../../assets/shoes01.jpg";
+import shoes02 from "../../assets/shoes-02.jpg";
+import explorer from "../../assets/explorer.webp";
+
 const items = [
   {
     title: "Timeless Precision",
     category: "WATCHES",
     desc: "Make every second count.",
-    img: "src/assets/watch-01.jxl",
+    img: watch01,
     link: "/shop",
   },
   {
     title: "Signature Scents",
     category: "PERFUMES",
     desc: "A fragrance that defines you.",
-    img: "src/assets/perfume-01.webp",
+    img: perfume01,
     link: "/shop",
   },
   {
     title: "Step Into Style",
     category: "SHOES",
     desc: "Own every step you take.",
-    img: "src/assets/shoes01.jpg",
+    img: shoes01,
     link: "/shop",
   },
   {
     title: "Everyday Luxury",
     category: "WATCHES",
     desc: "Elevate your everyday look.",
-    img: "src/assets/watch-02.jxl",
+    img: watch02,
     link: "/shop",
   },
   {
     title: "The Art of Fragrance",
     category: "PERFUMES",
     desc: "Leave a lasting impression.",
-    img: "/hero img/curology-t_ua25SR8mg-unsplash.jpg",
+    img: explorer,
     link: "/shop",
   },
   {
     title: "Designed to Move",
     category: "SHOES",
     desc: "Comfort meets confidence.",
-    img: "src/assets/shoes-02.jpg",
+    img: shoes02,
     link: "/shop",
   },
 ];
@@ -206,4 +214,3 @@ const Slider = () => {
 };
 
 export default Slider;
-
